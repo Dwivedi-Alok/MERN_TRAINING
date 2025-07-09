@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy Progress Pilot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container" id="quizContainer">
+        <div class="quiz-content" id="quizContent">
+            <div class="quiz-header">
+                <h1 class="quiz-title">🧠 Quizzy Progress Pilot</h1>
+                <p class="quiz-subtitle">Test your knowledge with our interactive quiz!</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Question 1 of 5</div>
+            </div>
+
+            <div class="score-display" id="scoreDisplay">
+                Score: <span id="currentScore">0</span> / <span id="totalQuestions">5</span>
+            </div>
+
+            <div class="question-card">
+                <div class="question-number" id="questionNumber">Question 1</div>
+                <div class="question-text" id="questionText">Loading question...</div>
+            </div>
+
+            <div class="options-container" id="optionsContainer">
+                <!-- Options will be dynamically generated -->
+            </div>
+
+            <button class="next-btn" id="nextBtn" disabled>Next Question</button>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="results-title">🎉 Quiz Complete!</div>
+            <div class="final-score" id="finalScore">0/5</div>
+            <div id="scoreMessage">Great job!</div>
+            <button class="restart-btn" id="restartBtn">Take Quiz Again</button>
+        </div>
+        <div class="progressCir">
+
+          <div class="timer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
